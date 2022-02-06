@@ -1,0 +1,16 @@
+main {
+    margin-bottom: 150px;
+}
+.title-footer {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.form__conteiner {
+    margin-bottom: 15px;
+}
+
+.form__name{
+    padding-top: 10px;
+    display: block;
+}

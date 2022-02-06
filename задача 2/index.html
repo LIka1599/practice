@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Задача 2</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Запись на курсы программирования</h1>
+        <hr>
+    </header>
+    <main>
+        <form class="form" action="" method="post">
+            <!-- name -->
+            <div class="form__conteiner">
+                <div class="form__name">
+                    <label for="user-name">Имя:</label>
+                       <div>
+                           <input type="text" placeholder="Андрей" name = "user-name" id="user-name" required>
+                       </div> 
+                </div>    
+            </div>
+                 
+            <!-- prog-language -->
+            <div class="form__conteiner">
+                <div class="form__language">
+                    <input type="radio" name="prog-language" checked>
+                    <label for="prog-language">Java</label>
+
+                    <input type="radio" name="prog-language" >
+                    <label for="prog-language">C++</label>
+                       
+                    <input type="radio" name="prog-language" >
+                    <label for="prog-language">Python</label>
+
+                    <input type="radio" name="prog-language" >
+                    <label for="prog-language"> PHP </label>
+
+                    <input type="radio" name="prog-language">
+                    <label for="prog-language">JavaScript</label>
+                </div>
+            </div>
+            
+            <!-- info -->
+            <div class="form__conteiner">
+                <div class="form__info">
+                    <label for="user-info">Дополнительная информация:</label>
+                        <div>
+                            <textarea placeholder="Есть опыт программирования на Java" name="user-info" id="user-info" cols="25" rows="5"></textarea>
+                        </div>
+                </div> 
+            </div>
+            
+            <!-- secret-word -->
+            <div class="form__conteiner">
+                <div class="form__secret-word">
+                    <label for="secret-word">Секретное слово:</label>
+                        <div><input type="password" id="secret-word" required></div>
+                </div> 
+            </div>
+            
+            <!-- checkbox -->
+            <div class="form__conteiner">
+                 <div class="form__checkbox">
+                     <input type="checkbox" required>
+                    <label> С правилами ознакомился и согласен</label>
+                </div>
+            </div>
+           
+            <!-- post -->  
+            <div class="form__conteiner">
+                <div class="form__post">
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Очистить">
+                </div>  
+            </div>          
+        </form>
+        <hr>
+        <div>Made by andron13</div>
+    </main>
+    <footer>
+        <h2 class="title-footer">Запись на курсы программирования</h2>
+    </footer>
+</body>
+</html>

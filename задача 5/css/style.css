@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,400;0,600;1,100&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+*::after, 
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; 
+    align-items: center;  
+    justify-content: center; 
+    height: 100vh;
+    background-color: rgb(223, 223, 223);
+}
+
+.card__conteiner {
+    display: grid;
+    gap: 20px; 
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    width: 700px;
+}
+
+.card__box {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card__box_first:hover {
+    background-color: rgb(64, 216, 132);
+}
+
+.card__box_second:hover {
+    background-color: rgb(116, 225, 255);
+}
+
+.card__box_last:hover {
+    background-color: rgb(255, 213, 107);
+}
+
+.card__box_first {
+    background-color: rgb(38, 159, 93);
+    color: white;
+    padding: 50px;
+}
+
+.card__box_second {
+    background-color: rgb(101, 194, 220);
+    color: black;
+    padding: 50px;
+}
+
+.card__box_last {
+    background-color: rgb(238, 188, 64);
+    color: white;
+    padding: 50px;
+}
+
+.card__caption {
+    position: relative;
+    font-family: arial, sans-serif;
+    font-stretch: ultra-condensed;
+    font-weight: 500;
+    text-align: left;
+    background-color: azure;
+    color: black;
+    padding: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+    box-shadow: 0.2em 0.2em 5px rgba(122,122,122,0.5);
+}
+
+.card__button {
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    transform: translateY(50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: none;
+    background-image: url(../img/vcsupdaterequired_93493.svg);
+    background-size: 100%;
+    cursor: pointer;
+    box-shadow: 0.2em 0.2em 5px rgba(122,122,122,0.5);
+}
+
+.card__button:hover {
+    background-image: url(../img/vcsupdaterequired_93491.svg);   
+}
+
+@media (max-width: 576px){
+    .card__conteiner {
+        grid-template-columns: repeat(2, 1fr);
+        width: 500px;
+    }
+} 
+
+@media (max-width: 375px){
+    .card__conteiner {
+        grid-template-columns: repeat(1, 1fr);
+        width: 250px;
+    }
+} 
