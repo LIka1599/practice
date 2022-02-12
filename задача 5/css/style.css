@@ -110,5 +110,4 @@ body {
     }
 } 
 
-var src = this.src;
-    main.setAttribute('src', src)
+
