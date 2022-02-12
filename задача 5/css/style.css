@@ -109,3 +109,6 @@ body {
         width: 250px;
     }
 } 
+
+var src = this.src;
+    main.setAttribute('src', src)
